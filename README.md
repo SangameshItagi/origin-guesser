@@ -1,3 +1,3 @@
 # OriginGuesser
 
-Contributors : William Brinson,  
+Contributors : William Brinson, Yuna Zhao,  
