@@ -1,1 +1,3 @@
 # OriginGuesser
+
+Contributors : William Brinson,  
