@@ -185,6 +185,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 <!-- CONTACT -->
 ## Contact
 
+Scrum Master: 
 Mario Mortara - mariomortara181@gmail.com
 
 Project Link: [https://github.com/SangameshItagi/OriginGuesser](https://github.com/SangameshItagi/OriginGuesser)
