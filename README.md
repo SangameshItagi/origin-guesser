@@ -75,7 +75,7 @@
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
-quiz game based on origin of objects and concepts. The user plays the game guessing the country of origin from the provided choices until they get one wrong. Unlike other trivia app this is concentrated only for origin of objects and concepts questions.
+Origin guesser is a quiz/trivia game in which the user is presented a word, object, or flag and offered a series of multiple choice answers to choose from as to the origin of that concept.  Unlike other trivia games, this is concentrated only on origin of objects and concepts questions.  The game offers several modes including an infinity mode in which the users continues moving through questions until they guess one wrong and time-attack mode in which the user attempts to get as many questions correct in a limited time span.
 
 
 
