@@ -164,9 +164,9 @@ See the [open issues](https://github.com/github_username/repo_name/issues) for a
 <!-- CONTRIBUTORS -->
 ## Contributors
 
-William Brinson
-Yuna Zhao
-Sangamesh Itagi
+William Brinson,
+Yuna Zhao,
+Sangamesh Itagi,
 Mario Mortara
 
 <p align="right">(<a href="#top">back to top</a>)</p>
