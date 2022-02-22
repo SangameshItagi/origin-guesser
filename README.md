@@ -17,7 +17,7 @@
 [![Issues][issues-shield]][issues-url]
 [![MIT License][license-shield]][license-url]
 [![LinkedIn][linkedin-shield]][linkedin-url]
-
+[![Wireframe][wireframe-shield][wireframe-url]
 
 
 <!-- PROJECT LOGO -->
@@ -206,5 +206,5 @@ Project Link: [https://github.com/SangameshItagi/OriginGuesser](https://github.c
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/linkedin_username
 [product-screenshot]: images/screenshot.png
-
+[wireframe-url]: https://github.com/SangameshItagi/origin-guesser/tree/main/Wireframes
 
