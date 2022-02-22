@@ -17,7 +17,7 @@
 [![Issues][issues-shield]][issues-url]
 [![MIT License][license-shield]][license-url]
 [![LinkedIn][linkedin-shield]][linkedin-url]
-[![Wireframe][wireframe-shield][wireframe-url]
+[![Wireframe][wireframe-shield]][wireframe-url]
 
 
 <!-- PROJECT LOGO -->
