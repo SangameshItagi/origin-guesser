@@ -207,4 +207,4 @@ Project Link: [https://github.com/SangameshItagi/OriginGuesser](https://github.c
 [linkedin-url]: https://linkedin.com/in/linkedin_username
 [product-screenshot]: images/screenshot.png
 [wireframe-url]: https://github.com/SangameshItagi/origin-guesser/tree/main/Wireframes
-
+[wireframe-shield]: https://img.shields.io/badge/%20%20%20-Wireframe-red
