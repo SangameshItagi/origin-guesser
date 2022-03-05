@@ -13,10 +13,18 @@
   color: white;
 }
 
+h1{
+  background-color: #282c34;
+  color: white;
+}
 
 .option-One-Button {
   color: black;
   background-color: rgb(152, 255, 173);
+}
+
+.option-One-Button:hover{
+  background-color: rgb(100, 200, 120);
 }
 
 .option-Two-Button{
@@ -24,12 +32,25 @@
   background-color: rgb(153, 255, 255);
 }
 
+.option-Two-Button:hover{
+  background-color: rgb(100, 200, 200);
+}
+
 .option-Three-Button{
   color: black;
   background-color: rgb(255, 209, 247);
+}
+
+.option-Three-Button:hover{
+  background-color: rgb(200, 150, 200);
 }
 
 .option-Four-Button{
   color: black;
   background-color: rgb(255, 255, 180);
 }
+
+.option-Four-Button:hover{
+  background-color: rgb(200, 200, 130);
+}
+
