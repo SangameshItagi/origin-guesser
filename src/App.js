@@ -6,6 +6,8 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
+        <h1>Welcome to OriginGuesser</h1>
+        <h2>Points:</h2>
         <Button
         className='option-One-Button' 
         style = {{ flexWrap: "wrap"}}
