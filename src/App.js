@@ -88,7 +88,7 @@ function App() {
 				<>
 					<div className='question-section'>
 						<div className='question-count'>
-							<span>Score {score}</span>
+							<span>Score: {score}</span>
 						</div>
 						<div className='question-text'>{questions[currentQuestion].questionText}</div>
 					</div>
