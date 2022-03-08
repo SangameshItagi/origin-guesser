@@ -68,7 +68,6 @@ h1{
   height: 200;
 }
 
-
 .option-Three-Button{
   color: black;
   background-color: rgb(255, 209, 247);
@@ -123,6 +122,7 @@ h1{
   display: flex;
   justify-content: center;
   margin-bottom: 12px;
+  font-size: 30px;
 }
 
 .timer-text {
@@ -157,17 +157,15 @@ button:hover{
 button{
   height: 200px;
   width: 100%;
-  font-size: 16px;
   color: #ffffff;
   background-color: #252d4a;
   border: 5px solid #cfcfcf;
-  border-radius: 15px;
   display: flex;
   padding: 5px;
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  font-size: 24px;
+  font-size: 36px;
 }
 
 button:focus {
