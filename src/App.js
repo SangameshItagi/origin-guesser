@@ -4,6 +4,25 @@ import { Button } from 'antd';
 import React, { useState } from 'react';
 
 export default function App() {
+
+  const [currentQuestion, setCurrentQuestion] = useState(0);
+	const [showScore, setShowScore] = useState(false);
+	const [score, setScore] = useState(0);
+  const [dataisLoaded, setDataisLoaded] = useState(false);
+  const [items, setItems] = useState([]);
+  fetch("https://www.dictionaryapi.com/api/v3/references/collegiate/json/bubble?key=76936eb6-9142-455b-87c9-619f993d7eda", {
+  "method": "GET"
+  })
+  .then(response => response.json())
+  .then(response => {
+  this.setState({
+    items: response,
+    dataisLoaded: true
+    })
+  })
+.catch(err => { console.log(err); 
+});
+
   const questions = [
       {
           questionText: 'Piano',
@@ -42,10 +61,6 @@ export default function App() {
           ],
       },
   ];
-
-	const [currentQuestion, setCurrentQuestion] = useState(0);
-	const [showScore, setShowScore] = useState(false);
-	const [score, setScore] = useState(0);
 
 	const handleAnswerOptionClick = (isCorrect) => {
 		if (isCorrect) {
