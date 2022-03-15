@@ -22,7 +22,7 @@ export default function App() {
 .catch(err => { console.log(err); 
 });
 
-const languages = [
+/*const languages = [
 	"Nahuatl",
 	"Spanish",
 	"Chinese", 
@@ -51,6 +51,7 @@ function randomLanguage(array, lang)
 		return index;
 	}
 }
+*/
   const questions = [
       {
           questionText: 'Piano',
