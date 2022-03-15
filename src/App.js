@@ -1,9 +1,56 @@
-
 import { Button } from 'antd';
 
 import React, { useState } from 'react';
 
 export default function App() {
+
+  const [currentQuestion, setCurrentQuestion] = useState(0);
+	const [showScore, setShowScore] = useState(false);
+	const [score, setScore] = useState(0);
+  const [dataisLoaded, setDataisLoaded] = useState(false);
+  const [items, setItems] = useState([]);
+  fetch("https://www.dictionaryapi.com/api/v3/references/collegiate/json/bubble?key=76936eb6-9142-455b-87c9-619f993d7eda", {
+  "method": "GET"
+  })
+  .then(response => response.json())
+  .then(response => {
+  this.setState({
+    items: response,
+    dataisLoaded: true
+    })
+  })
+.catch(err => { console.log(err); 
+});
+
+const languages = [
+	"Nahuatl",
+	"Spanish",
+	"Chinese", 
+	"Malay", 
+	"Japanese", 
+	"Korean", 
+	"Italian", 
+	"German", 
+	"English", 
+	"Greek", 
+	"Latin", 
+	"Swahili", 
+	"Russian", 
+	"French", 
+	"Dutch"	
+  ];
+  
+
+function randomLanguage(array, lang)
+{
+	return functions(){
+		var index = languages[Math.floor(Math.random()*languages.length)];
+		while(index !== lang){
+			var index = languages[Math.floor(Math.random()*languages.length)];
+		}
+		return index;
+	}
+}
   const questions = [
       {
           questionText: 'Piano',
@@ -43,10 +90,6 @@ export default function App() {
       },
   ];
 
-	const [currentQuestion, setCurrentQuestion] = useState(0);
-	const [showScore, setShowScore] = useState(false);
-	const [score, setScore] = useState(0);
-
 	const handleAnswerOptionClick = (isCorrect) => {
 		if (isCorrect) {
 			setScore(score + 1);
@@ -78,7 +121,7 @@ function App() {
 	return (
 		<div className='app'>
       <header className="App-header">
-      <h1>Welcome to OriginGuesser</h1>
+      <h1>Welcome to OriginGuesser{items.et}</h1>
       
 			{showScore ? (
 				<div className='score-section'>
