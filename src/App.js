@@ -2,9 +2,16 @@
 import { Button } from 'antd';
 
 import React, { useState } from 'react';
+import data from './data/words.txt';
 
 export default function App() {
 
+  console.log(data);
+  fetch(data)
+  .then((r) => r.text())
+  .then(text  => {
+    console.log(text);
+  })  
   const [currentQuestion, setCurrentQuestion] = useState(0);
 	const [showScore, setShowScore] = useState(false);
 	const [score, setScore] = useState(0);
