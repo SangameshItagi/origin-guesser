@@ -77,12 +77,6 @@
 ## About The Project
 Origin guesser is a quiz/trivia game in which the user is presented a word and offered a series of multiple choice answers to choose from as to the origin of that concept.  Unlike other trivia games, this is concentrated only on origin of words and concepts questions. The game currently has a 10 question quiz with radom questions and the goal is to get the most correct answers. 
 
-
-
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
-
-Here's a blank template to get started: To avoid retyping too much info. Do a search and replace with your text editor for the following: `github_username`, `repo_name`, `twitter_handle`, `linkedin_username`, `email`, `email_client`, `project_title`, `project_description`
-
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 
