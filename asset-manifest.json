@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/origin-guesser/static/css/main.c68573c6.css",
+    "main.js": "/origin-guesser/static/js/main.97f57b90.js",
+    "static/js/787.633ec38d.chunk.js": "/origin-guesser/static/js/787.633ec38d.chunk.js",
+    "static/media/words.txt": "/origin-guesser/static/media/words.b8c5649d08892fd9360f.txt",
+    "index.html": "/origin-guesser/index.html",
+    "main.c68573c6.css.map": "/origin-guesser/static/css/main.c68573c6.css.map",
+    "main.97f57b90.js.map": "/origin-guesser/static/js/main.97f57b90.js.map",
+    "787.633ec38d.chunk.js.map": "/origin-guesser/static/js/787.633ec38d.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c68573c6.css",
+    "static/js/main.97f57b90.js"
+  ]
+}
