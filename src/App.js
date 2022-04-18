@@ -16,9 +16,9 @@ export default function App() {
     .then(text => {
       console.log(text);
     })
-  const words = ['kimchi', 'Piano', 'pho', 'queso', 'mozzarella', 'Pizza', 'Dynamite', 'baguette', 'crepe', 'Shampoo', 'naan', 'macaroni'
-    , 'ramen', 'Microphone', 'Saxophone', 'cartoon', 'cookie', 'iguana', 'chinchilla', 'axolotl', 'chocolate', 'sense', 'potato', 'Taco', 'cosmos', 'flora', 'fauna', 'aloha', 'wonton', 'congee', 'croissant', 'pangolin', 'Zebra', 'brainwashing', 'bungalow', 'admiral', 'tea', 'ketchup', 'Futon', 'Poncho', 'Sudoku', 'karate', 'kudzu', 'Koi', 'tycoon', 'natto', 'taekwondo', 'kungfu', 'judo', 'kendo', 'dojo', 'Geode', 'hamburger', 'kiwi', 'margarita', 'whiskey', 'Vodka', 'gecko', 'anole', 'boa', 'gastropod', 'wombat', 'kangaroo', 'jaguar', 'marigold', 'bonsai', 'Pharaohs', 'Bowl', 'Chess', 'Telescope', 'safari', 'Sugar', 'chameleon', 'lion', 'penguin', 'avocado', 'coyote', 'tomato', 'Chili', 'Tortilla', 'Emerald', 'Ruby', 'Java', 'Atom', 'Code', 'lunar', 'typhoon', 'sofa', 'saffron', 'alcohol', 'octopus', 'magazine', 'coconut', 'pencil', 'mojito', 'wheel', 'cockatoo', 'Parakeet', 'parrot', 'scorpion', 'soda', 'mantle', 'mantis']
-  const wordAnswers = ['Korean', 'Italian', 'Vietnamese ', 'Spanish', 'Italian', 'Italian', 'Greek', 'French', 'French', 'Hindi', ' Hindi ', 'Italian', 'Japanese ', 'Greek ', 'French', 'Italian ', 'Dutch ', 'Spanish', 'Spanish', 'Nahuatl', 'Nahuatl ', 'English', 'Spanish', 'Spanish ', 'Greek', 'Latin', 'Latin', 'Hawaiian', 'Chinese', 'Tamil ', 'French', 'Malay ', 'Portuguese', 'Chinese ', 'Hindi', 'English ', 'Chinese', 'Malay ', 'Japanese', 'Spanish', 'Japanese', 'Japanese', 'Japanese ', 'Japanese ', 'Japanese ', 'Japanese', 'Korean ', 'Chinese', 'Japanese ', 'Japanese ', 'Japanese', 'Greek ', 'German ', 'Maori', 'Spanish ', 'Irish', 'Russian', 'Malay', 'French', 'Latin', 'Latin ', 'Dharuk', 'Guugu Yimidhirr', 'Portuguese', 'English', 'Japanese', 'Egyptian', 'German', 'English', 'Latin', 'Swahili', 'Sanskrit ', 'Greek', 'Greek', 'Welsh', 'Nahuatl', 'Nahuatl', 'Nahuatl', 'Nahuatl', 'Spanish', 'Greek ', 'Latin ', 'Greek ', 'Latin', 'Latin ', 'Greek', 'Arabic ', 'Arabic ', 'Arabic', 'Greek', 'Arabic ', 'Portuguese', 'Latin', 'Latin ', 'Sanskrit ', 'Malay ', 'French ', 'French ', 'Greek', 'Arabic ', 'Latin ', 'Greek '];
+
+
+  const wordChoice = [{word: "Kimchi", origin: "Korean"},{word: "Piano",origin: "Italian"},{word: 'Pho',origin: 'Vietnamese'},{word: "Queso",origin: "Spanish"},{word: "Mozzarella",origin: "Italian"},{word: "Pizza",origin: "Italian"},{word: "Dynamite",origin: "Greek"},{word: "Baguette",origin: "French"},{word: "Crepe",origin: "French"},{word: "Shampoo",origin: "Hindi"},{word: "Naan",origin: "Hindi"},{word: "Macaroni",origin: "Italian"},{word: "Ramen",origin: "Japanese"},{word: "Microphone",origin: "Greek"},{word: "Saxophone",origin: "French"},{word: "cartoon",origin: "Italian"},{word: "Cookie",origin: "Dutch"},{word: "Iguana",origin: "Spanish"},{word: "Chinchilla",origin: "Spanish"},{word: "Axolotl",origin: "Nahuatl"},{word: "Chocolate",origin: "Nahuatl"},{word: "Sense",origin: "English"},{word: "Potato",origin: "Spanish"},{word: "Taco",origin: "Spanish"},{word: "Cosmos",origin: "Greek"},{word: "Flora",origin: "Latin"},{word: "Fauna",origin: "Latin"},{word: "Aloha",origin: "Hawaiian"},{word: "Wonton",origin: "Chinese"},{word: "Congee",origin: "Tamil"},{word: "Croissant",origin: "French"},{word: "Pangolin",origin: "Malay"},{word: "Zebra",origin: "Portuguese"},{word: "Brainwashing",origin: "Chinese"},{word: "Bungalow",origin: "Hindi"},{word: "Admiral",origin: "English"},{word: "Tea",origin: "Chinese"},{word: "Ketchup",origin: "Malay"},{word: "Futon",origin: "Japanese"},{word: "Poncho",origin: "Spanish"},{word: "Sudoku",origin: "Japanese"},{word: "Karate",origin: "Japanese"},{word: "Kudzu",origin: "Japanese"},{word: "Koi",origin: "Japanese"},{word: "Tycoon",origin: "Japanese"},{word: "Natto",origin: "Japanese"},{word: "Taekwondo",origin: "Korean"},{word: "Kungfu",origin: "Chinese"},{word: "Judo",origin: "Japanese"},{word: "Kendo",origin: "Japanese"},{word: "Dojo",origin: "Japanese"},{word: "Geode",origin: "Greek"},{word: "Hamburger",origin: "German"},{word: "Kiwi",origin: "Maori"},{word: "Margarita",origin: "Spanish"},{word: "Whiskey",origin: "Irish"},{word: "Vodka",origin: "Russian"},{word: "Gecko",origin: "Malay"},{word: "Anole",origin: "French"},{word: "Boa",origin: "Latin"},{word: "Gastropod",origin: "Latin"},{word: "Wombat",origin: "Dharuk"},{word: "Kangaroo",origin: "Guugu Yimidhirr"},{word: "Jaguar",origin: "Portuguese"},{word: "Marigold",origin: "English"},{word: "Bonsai",origin: "Japanese"},{word: "Pharaohs",origin: "Egyptian"},{word: "Bowl",origin: "German"},{word: "Chess",origin: "English"},{word: "Telescope",origin: "Latin"},{word: "Safari",origin: "Swahili"},{word: "Sugar",origin: "Sanskrit"},{word: "Chameleon",origin: "Greek"},{word: "Lion",origin: "Greek"},{word: "Penguin",origin: "Welsh"},{word: "Avocado",origin: "Nahuatl"},{word: "Coyote",origin: "Nahuatl"},{word: "Tomato",origin: "Nahuatl"},{word: "Chili",origin: "Nahuatl"},{word: "Tortilla",origin: "Spanish"},{word: "Emerald",origin: "Greek"},{word: "Ruby",origin: "Latin"},{word: "Java",origin: "Greek"},{word: "Atom",origin: "Latin"},{word: "Code",origin: "Latin"},{word: "Lunar",origin: "Greek"},{word: "Typhoon",origin: "Arabic"},{word: "Sofa",origin: "Arabic"},{word: "Saffron",origin: "Arabic"},{word: "Alcohol",origin: "Greek"},{word: "Octopus",origin: "Arabic"},{word: "Magazine",origin: "Portuguese"},{word: "Coconut",origin: "Latin"},{word: "Pencil",origin: "Latin"},{word: "Mojito",origin: "Sanskrit"},{word: "Wheel",origin: "Malay"},{word: "Cockatoo",origin: "French"},{word: "Parakeet",origin: "French"},{word: "Parrot",origin: "Greek"},{word: "Scorpion",origin: "Arabic"},{word: "Soda",origin: "Latin"},{word: "Mantle",origin: "Latin"},{word: "Mantis",origin: "Greek"}]
   const answers = ['English', 'Spanish', 'French', 'Japanese', 'Vietnamese', 'Italian', 'Dutch', 'Nahuatl', 'Latin', 'Hawaiian', 'Tamil', 'Malay', 'Portuguese', 'Chinese', 'German', 'Maori', 'Irish', 'Russian', 'Dharuk', 'Guugu Yimidhirr', 'Portuguese', 'Egyptian', 'Swahili', 'Sanskrit', 'Welsh', 'Arabic'];
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [showScore, setShowScore] = useState(false);
@@ -38,98 +38,171 @@ export default function App() {
     .catch(err => {
       console.log(err);
     });
-  //This is just an array to give a bunch of random numbers so we can get a randome question and answer
-  // I dont know how to randomize which button will be correct so they will be hard coded for the time being
-  const choices = [Math.floor(Math.random() * answers.length), Math.floor(Math.random() * answers.length), Math.floor(Math.random() * answers.length), Math.floor(Math.random() * answers.length), Math.floor(Math.random() * answers.length), Math.floor(Math.random() * answers.length), Math.floor(Math.random() * answers.length), Math.floor(Math.random() * answers.length), Math.floor(Math.random() * answers.length), Math.floor(Math.random() * answers.length), Math.floor(Math.random() * answers.length), Math.floor(Math.random() * answers.length), Math.floor(Math.random() * answers.length), Math.floor(Math.random() * answers.length), Math.floor(Math.random() * answers.length), Math.floor(Math.random() * answers.length), Math.floor(Math.random() * answers.length), Math.floor(Math.random() * answers.length), Math.floor(Math.random() * answers.length), Math.floor(Math.random() * answers.length), Math.floor(Math.random() * answers.length), Math.floor(Math.random() * answers.length), Math.floor(Math.random() * answers.length), Math.floor(Math.random() * answers.length)]
+
+
+  const shuffledQuestion = wordChoice.sort(() => 0.5 - Math.random());
+
+
+  var answerIndex = answers.indexOf(shuffledQuestion[0].origin);
+  answers.splice(answerIndex, 1);
+  const shuffledAnswers = answers.sort(() => 0.5 - Math.random());
+  let answer = [{randanswer: shuffledQuestion[0].origin, isCorrect: true}, {randanswer:shuffledAnswers[0], isCorrect: false}, {randanswer:shuffledAnswers[1], isCorrect: false}, {randanswer:shuffledAnswers[2], isCorrect: false}];
+  const shuffledAnswer = answer.sort(() => 0.5 - Math.random());
+  answers.push(shuffledQuestion[0].origin);
+  
+  answerIndex = answers.indexOf(shuffledQuestion[1].origin);
+  answers.splice(answerIndex, 1);
+  const shuffledAnswers1 = answers.sort(() => 0.5 - Math.random());
+  let answer1 = [{randanswer: shuffledQuestion[1].origin, isCorrect: true}, {randanswer:shuffledAnswers1[0], isCorrect: false}, {randanswer:shuffledAnswers1[1], isCorrect: false}, {randanswer:shuffledAnswers1[2], isCorrect: false}];
+  const shuffledAnswer1 = answer1.sort(() => 0.5 - Math.random());
+  answers.push(shuffledQuestion[1].origin);
+  
+  answerIndex = answers.indexOf(shuffledQuestion[2].origin);
+  answers.splice(answerIndex, 1);
+  const shuffledAnswers2 = answers.sort(() => 0.5 - Math.random());
+  let answer2 = [{randanswer: shuffledQuestion[2].origin, isCorrect: true}, {randanswer:shuffledAnswers2[0], isCorrect: false}, {randanswer:shuffledAnswers2[1], isCorrect: false}, {randanswer:shuffledAnswers2[2], isCorrect: false}];
+  const shuffledAnswer2 = answer2.sort(() => 0.5 - Math.random());
+  answers.push(shuffledQuestion[2].origin);
+  
+  answerIndex = answers.indexOf(shuffledQuestion[3].origin);
+  answers.splice(answerIndex, 1);
+  const shuffledAnswers3 = answers.sort(() => 0.5 - Math.random());
+  let answer3 = [{randanswer: shuffledQuestion[3].origin, isCorrect: true}, {randanswer:shuffledAnswers3[0], isCorrect: false}, {randanswer:shuffledAnswers3[1], isCorrect: false}, {randanswer:shuffledAnswers3[2], isCorrect: false}];
+  const shuffledAnswer3 = answer3.sort(() => 0.5 - Math.random());
+  answers.push(shuffledQuestion[3].origin);
+  
+  answerIndex = answers.indexOf(shuffledQuestion[4].origin);
+  answers.splice(answerIndex, 1);
+  const shuffledAnswers4 = answers.sort(() => 0.5 - Math.random());
+  let answer4 = [{randanswer: shuffledQuestion[4].origin, isCorrect: true}, {randanswer:shuffledAnswers4[0], isCorrect: false}, {randanswer:shuffledAnswers4[1], isCorrect: false}, {randanswer:shuffledAnswers4[2], isCorrect: false}];
+  const shuffledAnswer4 = answer4.sort(() => 0.5 - Math.random());
+  answers.push(shuffledQuestion[4].origin);
+  
+  answerIndex = answers.indexOf(shuffledQuestion[5].origin);
+  answers.splice(answerIndex, 1);
+  const shuffledAnswers5 = answers.sort(() => 0.5 - Math.random());
+  let answer5 = [{randanswer: shuffledQuestion[5].origin, isCorrect: true}, {randanswer:shuffledAnswers5[0], isCorrect: false}, {randanswer:shuffledAnswers5[1], isCorrect: false}, {randanswer:shuffledAnswers5[2], isCorrect: false}];
+  const shuffledAnswer5 = answer5.sort(() => 0.5 - Math.random());
+  answers.push(shuffledQuestion[5].origin);
+  
+  answerIndex = answers.indexOf(shuffledQuestion[6].origin);
+  answers.splice(answerIndex, 1);
+  const shuffledAnswers6 = answers.sort(() => 0.5 - Math.random());
+  let answer6 = [{randanswer: shuffledQuestion[6].origin, isCorrect: true}, {randanswer:shuffledAnswers6[0], isCorrect: false}, {randanswer:shuffledAnswers6[1], isCorrect: false}, {randanswer:shuffledAnswers6[2], isCorrect: false}];
+  const shuffledAnswer6 = answer6.sort(() => 0.5 - Math.random());
+  answers.push(shuffledQuestion[6].origin);
+  
+  answerIndex = answers.indexOf(shuffledQuestion[7].origin);
+  answers.splice(answerIndex, 1);
+  const shuffledAnswers7 = answers.sort(() => 0.5 - Math.random());
+  let answer7 = [{randanswer: shuffledQuestion[7].origin, isCorrect: true}, {randanswer:shuffledAnswers7[0], isCorrect: false}, {randanswer:shuffledAnswers7[1], isCorrect: false}, {randanswer:shuffledAnswers7[2], isCorrect: false}];
+  const shuffledAnswer7 = answer7.sort(() => 0.5 - Math.random());
+  answers.push(shuffledQuestion[7].origin);
+  
+  answerIndex = answers.indexOf(shuffledQuestion[8].origin);
+  answers.splice(answerIndex, 1);
+  const shuffledAnswers8 = answers.sort(() => 0.5 - Math.random());
+  let answer8 = [{randanswer: shuffledQuestion[8].origin, isCorrect: true}, {randanswer:shuffledAnswers8[0], isCorrect: false}, {randanswer:shuffledAnswers8[1], isCorrect: false}, {randanswer:shuffledAnswers8[2], isCorrect: false}];
+  const shuffledAnswer8 = answer8.sort(() => 0.5 - Math.random());
+  answers.push(shuffledQuestion[8].origin);
+  
+  answerIndex = answers.indexOf(shuffledQuestion[9].origin);
+  answers.splice(answerIndex, 1);
+  const shuffledAnswers9 = answers.sort(() => 0.5 - Math.random());
+  let answer9 = [{randanswer: shuffledQuestion[9].origin, isCorrect: true}, {randanswer:shuffledAnswers9[0], isCorrect: false}, {randanswer:shuffledAnswers9[1], isCorrect: false}, {randanswer:shuffledAnswers9[2], isCorrect: false}];
+  const shuffledAnswer9 = answer9.sort(() => 0.5 - Math.random());
+  answers.push(shuffledQuestion[9].origin);
+  
+
   const questions = [
     {
-      questionText: words[choices[0]],
+      questionText: shuffledQuestion[0].word,
       answerOptions: [
-        { answerText: wordAnswers[choices[0]], isCorrect: true },
-        { answerText: answers[Math.floor(Math.random() * answers.length)], isCorrect: false },
-        { answerText: answers[Math.floor(Math.random() * answers.length)], isCorrect: false },
-        { answerText: answers[Math.floor(Math.random() * answers.length)], isCorrect: false },
+        { answerText: shuffledAnswer[0].randanswer, isCorrect: shuffledAnswer[0].isCorrect },
+        { answerText: shuffledAnswer[1].randanswer, isCorrect: shuffledAnswer[1].isCorrect },
+        { answerText: shuffledAnswer[2].randanswer, isCorrect: shuffledAnswer[2].isCorrect },
+        { answerText: shuffledAnswer[3].randanswer, isCorrect: shuffledAnswer[3].isCorrect },
       ],
     },
     {
-      questionText: words[choices[1]],
+      questionText: shuffledQuestion[1].word,
       answerOptions: [
-        { answerText: answers[Math.floor(Math.random() * answers.length)], isCorrect: false },
-        { answerText: answers[Math.floor(Math.random() * answers.length)], isCorrect: false },
-        { answerText: answers[Math.floor(Math.random() * answers.length)], isCorrect: false },
-        { answerText: wordAnswers[choices[1]], isCorrect: true },
+        { answerText: shuffledAnswer1[0].randanswer, isCorrect: shuffledAnswer1[0].isCorrect },
+        { answerText: shuffledAnswer1[1].randanswer, isCorrect: shuffledAnswer1[1].isCorrect },
+        { answerText: shuffledAnswer1[2].randanswer, isCorrect: shuffledAnswer1[2].isCorrect },
+        { answerText: shuffledAnswer1[3].randanswer, isCorrect: shuffledAnswer1[3].isCorrect },
       ],
     },
     {
-      questionText: words[choices[2]],
+      questionText: shuffledQuestion[2].word,
       answerOptions: [
-        { answerText: answers[Math.floor(Math.random() * answers.length)], isCorrect: false },
-        { answerText: answers[Math.floor(Math.random() * answers.length)], isCorrect: false },
-        { answerText: wordAnswers[choices[2]], isCorrect: true },
-        { answerText: answers[Math.floor(Math.random() * answers.length)], isCorrect: false },
+        { answerText: shuffledAnswer2[0].randanswer, isCorrect: shuffledAnswer2[0].isCorrect },
+        { answerText: shuffledAnswer2[1].randanswer, isCorrect: shuffledAnswer2[1].isCorrect },
+        { answerText: shuffledAnswer2[2].randanswer, isCorrect: shuffledAnswer2[2].isCorrect },
+        { answerText: shuffledAnswer2[3].randanswer, isCorrect: shuffledAnswer2[3].isCorrect },
       ],
     },
     {
-      questionText: words[choices[3]],
+      questionText: shuffledQuestion[3].word,
       answerOptions: [
-        { answerText: answers[Math.floor(Math.random() * answers.length)], isCorrect: false },
-        { answerText: answers[Math.floor(Math.random() * answers.length)], isCorrect: false },
-        { answerText: answers[Math.floor(Math.random() * answers.length)], isCorrect: false },
-        { answerText: wordAnswers[choices[3]], isCorrect: true },
+        { answerText: shuffledAnswer3[0].randanswer, isCorrect: shuffledAnswer3[0].isCorrect },
+        { answerText: shuffledAnswer3[1].randanswer, isCorrect: shuffledAnswer3[1].isCorrect },
+        { answerText: shuffledAnswer3[2].randanswer, isCorrect: shuffledAnswer3[2].isCorrect },
+        { answerText: shuffledAnswer3[3].randanswer, isCorrect: shuffledAnswer3[3].isCorrect },
       ],
     },
     {
-      questionText: words[choices[4]],
+      questionText: shuffledQuestion[4].word,
       answerOptions: [
-        { answerText: wordAnswers[choices[4]], isCorrect: true },
-        { answerText: answers[Math.floor(Math.random() * answers.length)], isCorrect: false },
-        { answerText: answers[Math.floor(Math.random() * answers.length)], isCorrect: false },
-        { answerText: answers[Math.floor(Math.random() * answers.length)], isCorrect: false },
+        { answerText: shuffledAnswer4[0].randanswer, isCorrect: shuffledAnswer4[0].isCorrect },
+        { answerText: shuffledAnswer4[1].randanswer, isCorrect: shuffledAnswer4[1].isCorrect },
+        { answerText: shuffledAnswer4[2].randanswer, isCorrect: shuffledAnswer4[2].isCorrect },
+        { answerText: shuffledAnswer4[3].randanswer, isCorrect: shuffledAnswer4[3].isCorrect },
       ],
     },
     {
-      questionText: words[choices[5]],
+      questionText: shuffledQuestion[5].word,
       answerOptions: [
-        { answerText: answers[Math.floor(Math.random() * answers.length)], isCorrect: false },
-        { answerText: answers[Math.floor(Math.random() * answers.length)], isCorrect: false },
-        { answerText: answers[Math.floor(Math.random() * answers.length)], isCorrect: false },
-        { answerText: wordAnswers[choices[5]], isCorrect: true },
+        { answerText: shuffledAnswer5[0].randanswer, isCorrect: shuffledAnswer5[0].isCorrect },
+        { answerText: shuffledAnswer5[1].randanswer, isCorrect: shuffledAnswer5[1].isCorrect },
+        { answerText: shuffledAnswer5[2].randanswer, isCorrect: shuffledAnswer5[2].isCorrect },
+        { answerText: shuffledAnswer5[3].randanswer, isCorrect: shuffledAnswer5[3].isCorrect },
       ],
     },
     {
-      questionText: words[choices[6]],
+      questionText: shuffledQuestion[6].word,
       answerOptions: [
-        { answerText: answers[Math.floor(Math.random() * answers.length)], isCorrect: false },
-        { answerText: answers[Math.floor(Math.random() * answers.length)], isCorrect: false },
-        { answerText: answers[Math.floor(Math.random() * answers.length)], isCorrect: false },
-        { answerText: wordAnswers[choices[6]], isCorrect: true },
+        { answerText: shuffledAnswer6[0].randanswer, isCorrect: shuffledAnswer6[0].isCorrect },
+        { answerText: shuffledAnswer6[1].randanswer, isCorrect: shuffledAnswer6[1].isCorrect },
+        { answerText: shuffledAnswer6[2].randanswer, isCorrect: shuffledAnswer6[2].isCorrect },
+        { answerText: shuffledAnswer6[3].randanswer, isCorrect: shuffledAnswer6[3].isCorrect },
       ],
     },
     {
-      questionText: words[choices[7]],
+      questionText: shuffledQuestion[7].word,
       answerOptions: [
-        { answerText: answers[Math.floor(Math.random() * answers.length)], isCorrect: false },
-        { answerText: wordAnswers[choices[7]], isCorrect: true },
-        { answerText: answers[Math.floor(Math.random() * answers.length)], isCorrect: false },
-        { answerText: answers[Math.floor(Math.random() * answers.length)], isCorrect: false },
+        { answerText: shuffledAnswer7[0].randanswer, isCorrect: shuffledAnswer7[0].isCorrect },
+        { answerText: shuffledAnswer7[1].randanswer, isCorrect: shuffledAnswer7[1].isCorrect },
+        { answerText: shuffledAnswer7[2].randanswer, isCorrect: shuffledAnswer7[2].isCorrect },
+        { answerText: shuffledAnswer7[3].randanswer, isCorrect: shuffledAnswer7[3].isCorrect },
       ],
     },
     {
-      questionText: words[choices[8]],
+      questionText: shuffledQuestion[8].word,
       answerOptions: [
-        { answerText: answers[Math.floor(Math.random() * answers.length)], isCorrect: false },
-        { answerText: answers[Math.floor(Math.random() * answers.length)], isCorrect: false },
-        { answerText: wordAnswers[choices[8]], isCorrect: false },
-        { answerText: answers[Math.floor(Math.random() * answers.length)], isCorrect: true },
+        { answerText: shuffledAnswer8[0].randanswer, isCorrect: shuffledAnswer8[0].isCorrect },
+        { answerText: shuffledAnswer8[1].randanswer, isCorrect: shuffledAnswer8[1].isCorrect },
+        { answerText: shuffledAnswer8[2].randanswer, isCorrect: shuffledAnswer8[2].isCorrect },
+        { answerText: shuffledAnswer8[3].randanswer, isCorrect: shuffledAnswer8[3].isCorrect },
       ],
     },
     {
-      questionText: words[choices[9]],
+      questionText: shuffledQuestion[9].word,
       answerOptions: [
-        { answerText: wordAnswers[choices[9]], isCorrect: true },
-        { answerText: answers[Math.floor(Math.random() * answers.length)], isCorrect: false },
-        { answerText: answers[Math.floor(Math.random() * answers.length)], isCorrect: false },
-        { answerText: answers[Math.floor(Math.random() * answers.length)], isCorrect: false },
+        { answerText: shuffledAnswer9[0].randanswer, isCorrect: shuffledAnswer9[0].isCorrect },
+        { answerText: shuffledAnswer9[1].randanswer, isCorrect: shuffledAnswer9[1].isCorrect },
+        { answerText: shuffledAnswer9[2].randanswer, isCorrect: shuffledAnswer9[2].isCorrect },
+        { answerText: shuffledAnswer9[3].randanswer, isCorrect: shuffledAnswer9[3].isCorrect },
       ],
     },
     
