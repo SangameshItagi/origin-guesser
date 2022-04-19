@@ -114,6 +114,36 @@ export default function App() {
   answers.push(shuffledQuestion[9].origin);
   
 
+/*const languages = [
+	"Nahuatl",
+	"Spanish",
+	"Chinese", 
+	"Malay", 
+	"Japanese", 
+	"Korean", 
+	"Italian", 
+	"German", 
+	"English", 
+	"Greek", 
+	"Latin", 
+	"Swahili", 
+	"Russian", 
+	"French", 
+	"Dutch"	
+  ];
+  
+
+function randomLanguage(array, lang)
+{
+	return functions(){
+		var index = languages[Math.floor(Math.random()*languages.length)];
+		while(index !== lang){
+			var index = languages[Math.floor(Math.random()*languages.length)];
+		}
+		return index;
+	}
+}
+*/
   const questions = [
     {
       questionText: shuffledQuestion[0].word,
@@ -269,14 +299,3 @@ export default function App() {
 
   );
 }
-const styles = StyleSheet.create({
-  baseText: {
-    textAlign: 'center',
-    fontSize: 30,
-    color: 'white'
-  },
-  titleText: {
-    fontSize: 20,
-    fontWeight: "bold"
-  }
-});
