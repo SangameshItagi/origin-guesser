@@ -299,3 +299,16 @@ function randomLanguage(array, lang)
 
   );
 }
+
+const styles = StyleSheet.create({
+  baseText: {
+    textAlign: 'center',
+    fontSize: 30,
+    color: 'white'
+  },
+  titleText: {
+    fontSize: 20,
+    fontWeight: "bold"
+  }
+});
+
