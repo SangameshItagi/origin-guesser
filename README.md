@@ -77,16 +77,11 @@
 ## About The Project
 Origin guesser is a quiz/trivia game in which the user is presented a word and offered a series of multiple choice answers to choose from as to the origin of that concept.  Unlike other trivia games, this is concentrated only on origin of words and concepts questions. The game currently has a 10 question quiz with radom questions and the goal is to get the most correct answers. 
 
-<p align="right">(<a href="#top">back to top</a>)</p>
-
 
 
 ### Built With
 
 * [React.js](https://reactjs.org/)
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
 
 
 <!-- GETTING STARTED -->
@@ -115,8 +110,6 @@ This is an example of how to list things you need to use the software and how to
    npm start
    ```
 
-<p align="right">(<a href="#top">back to top</a>)</p>
-
 
 
 <!-- USAGE EXAMPLES -->
@@ -126,8 +119,6 @@ Press on start game button in the starting page.
 
 _For more examples, please refer to the [Documentation](https://www.originguesser.com)_
 
-<p align="right">(<a href="#top">back to top</a>)</p>
-
 
 
 <!-- ROADMAP -->
@@ -135,11 +126,8 @@ _For more examples, please refer to the [Documentation](https://www.originguesse
 
 - [ ] Add more questions
 - [ ] Add new modes(Infinite and time attack)
-- [ ] etc.
 
 See the [open issues](https://github.com/SangameshItagi/OriginGuesser/issues) for a full list of proposed features (and known issues).
-
-<p align="right">(<a href="#top">back to top</a>)</p>
 
 
 
@@ -151,8 +139,6 @@ Yuna Zhao,
 Sangamesh Itagi,
 Mario Mortara
 
-<p align="right">(<a href="#top">back to top</a>)</p>
-
 
 
 <!-- LICENSE -->
@@ -160,21 +146,12 @@ Mario Mortara
 
 Distributed under the MIT License. See `LICENSE` for more information.
 
-<p align="right">(<a href="#top">back to top</a>)</p>
-
-
-
 <!-- CONTACT -->
 ## Contact
 
 Scrum Master: 
 Mario Mortara - mariomortara181@gmail.com
-
 Project Link: [https://github.com/SangameshItagi/OriginGuesser](https://github.com/SangameshItagi/OriginGuesser)
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
-
 
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
@@ -184,7 +161,6 @@ Project Link: [https://github.com/SangameshItagi/OriginGuesser](https://github.c
 * [https://ant.design/](https://ant.design/)
 * [https://balsamiq.com/](https://balsamiq.com/)
 
-<p align="right">(<a href="#top">back to top</a>)</p>
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
