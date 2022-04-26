@@ -179,7 +179,7 @@ Project Link: [https://github.com/SangameshItagi/OriginGuesser](https://github.c
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
 
-* []()
+* [https://reactjs.org/](https://reactjs.org/)
 * []()
 * []()
 
