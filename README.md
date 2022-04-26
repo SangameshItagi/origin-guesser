@@ -180,8 +180,9 @@ Project Link: [https://github.com/SangameshItagi/OriginGuesser](https://github.c
 ## Acknowledgments
 
 * [https://reactjs.org/](https://reactjs.org/)
-* []()
-* []()
+* [https://dictionaryapi.com/](https://dictionaryapi.com/)
+* [https://ant.design/](https://ant.design/)
+* [https://balsamiq.com/](https://balsamiq.com/)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
